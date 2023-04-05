@@ -1,3 +1,5 @@
+ /* eslint-disable no-unused-vars */
+ /* eslint-disable */ 
 import React, { Component } from 'react';
 import './App.css';
 import Greet from './components/Greet';
@@ -7,8 +9,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Greet/>
-        <Welcome />
+        <Greet name = 'vivek' heroname = 'superman'>
+          This is childern props
+        </Greet>
+        <Greet name = 'amit' heroname = 'batman'>
+          <button>Click me</button>
+        </Greet>
+        <Greet name = 'sam' heroname = 'spiderman'></Greet>
+        {/* <Welcome /> */}
       </div>
     );
   }
