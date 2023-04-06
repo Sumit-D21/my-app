@@ -4,11 +4,15 @@ import React, { Component } from 'react';
 import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/welcome';
+import Message from './components/Message';
+import Counter from './components/Counter';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Message />
+        <Counter />
         {/* <Greet name = 'vivek' heroname = 'superman'>
           This is childern props
         </Greet>
@@ -16,12 +20,12 @@ class App extends Component {
           <button>Click me</button>
         </Greet>
         <Greet name = 'sam' heroname = 'spiderman'></Greet> */}
-        <Welcome name = 'vivek' heroname = 'superman'>
+        {/* <Welcome name = 'vivek' heroname = 'superman'>
           This is class children props 
           </Welcome>
         <Welcome name = 'amit' heroname = 'batman'>
           <button>click!</button>
-        </Welcome>
+        </Welcome> */}
       </div>
     );
   }
