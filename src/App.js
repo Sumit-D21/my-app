@@ -6,13 +6,19 @@ import Greet from './components/Greet';
 import Welcome from './components/welcome';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import Functionclick from './components/functionClick';
+import Classclick from './components/Classclick';
+import EventBind from './components/EventBind';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Message />
-        <Counter />
+        <EventBind />
+        {/* <Functionclick /><br></br>
+        <Classclick /> */}
+        {/* <Message />
+        <Counter /> */}
         {/* <Greet name = 'vivek' heroname = 'superman'>
           This is childern props
         </Greet>
