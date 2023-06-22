@@ -15,12 +15,18 @@ import NameList from './components/NameList';
 import Form from './components/Form';
 import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
+import PortalDemo from './components/PortalDemo';
+import ClickCounter from './advanced/ClickCounter';
+import HoverCounter from './advanced/HoverCounter';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <FocusInput/>
+        <ClickCounter/>
+        <HoverCounter/>
+        {/* <PortalDemo/> */}
+        {/* <FocusInput/> */}
         {/* <RefsDemo/> */}
         {/* <Form/> */}
         {/* <NameList /> */}
