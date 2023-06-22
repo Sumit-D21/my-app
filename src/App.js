@@ -18,13 +18,20 @@ import FocusInput from './components/FocusInput';
 import PortalDemo from './components/PortalDemo';
 import ClickCounter from './advanced/ClickCounter';
 import HoverCounter from './advanced/HoverCounter';
+import ClickCounterProps from './advanced/ClickCounterProps';
+import HoverCounterProps from './advanced/HoverCounterProps';
+import CounterProps from './advanced/CounterProps';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ClickCounter/>
-        <HoverCounter/>
+        <CounterProps render={(count,increment) => (<ClickCounterProps count={count} increment={increment} />)} />
+        <CounterProps render={(count,increment) => (<HoverCounterProps count={count} increment={increment} />)} />
+        {/* <ClickCounterProps/> */}
+        {/* <HoverCounterProps/> */}
+        {/* <ClickCounter/> */}
+        {/* <HoverCounter/> */}
         {/* <PortalDemo/> */}
         {/* <FocusInput/> */}
         {/* <RefsDemo/> */}
