@@ -21,13 +21,20 @@ import HoverCounter from './advanced/HoverCounter';
 import ClickCounterProps from './advanced/ClickCounterProps';
 import HoverCounterProps from './advanced/HoverCounterProps';
 import CounterProps from './advanced/CounterProps';
+import ComponentA from './advanced/ComponentA';
+import { UserProvider } from './advanced/UserComponent';
+import PostsList from './http/PostsList';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <CounterProps render={(count,increment) => (<ClickCounterProps count={count} increment={increment} />)} />
-        <CounterProps render={(count,increment) => (<HoverCounterProps count={count} increment={increment} />)} />
+        <PostsList/>
+        {/* <UserProvider value ='SAM'> 
+        <ComponentA/>
+        </UserProvider> */}
+        {/* <CounterProps render={(count,increment) => (<ClickCounterProps count={count} increment={increment} />)} /> */}
+        {/* <CounterProps render={(count,increment) => (<HoverCounterProps count={count} increment={increment} />)} /> */}
         {/* <ClickCounterProps/> */}
         {/* <HoverCounterProps/> */}
         {/* <ClickCounter/> */}
