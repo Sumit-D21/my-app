@@ -23,13 +23,13 @@ import HoverCounterProps from './advanced/HoverCounterProps';
 import CounterProps from './advanced/CounterProps';
 import ComponentA from './advanced/ComponentA';
 import { UserProvider } from './advanced/UserComponent';
-import PostsList from './http/PostsList';
+import GetList from './advanced/GetList';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <PostsList/>
+        <GetList/>
         {/* <UserProvider value ='SAM'> 
         <ComponentA/>
         </UserProvider> */}
