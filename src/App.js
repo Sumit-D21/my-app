@@ -24,12 +24,14 @@ import CounterProps from './advanced/CounterProps';
 import ComponentA from './advanced/ComponentA';
 import { UserProvider } from './advanced/UserComponent';
 import GetList from './advanced/GetList';
+import PostList from './advanced/PostList';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <GetList/>
+        <PostList/>
+        {/* <GetList/> */}
         {/* <UserProvider value ='SAM'> 
         <ComponentA/>
         </UserProvider> */}
